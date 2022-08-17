@@ -3,9 +3,9 @@ class KanbansController < ApplicationController
   before_action :find_kanban
 
   def index
-    @kanban_to_do = Kanban.where(state: to_do)
-    @kanban_doing = Kanban.where(state: doing)
-    @kanban_done = Kanban.where(state: done)
+    @kanban_to_do = Kanban.where(state: "to_do")
+    @kanban_doing = Kanban.where(state: "doing")
+    @kanban_done = Kanban.where(state: "done")
   end
 
   def new

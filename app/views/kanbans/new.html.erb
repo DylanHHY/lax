@@ -1,0 +1,9 @@
+<%= form_with model:@Kanban do |form| %>
+
+  <div>工作標題：<%= form.text_field :title %></div>
+
+  <div>工作內容：<%= form.text_area :content %></div>
+
+  <%= form.submut %>
+
+<% end %>
